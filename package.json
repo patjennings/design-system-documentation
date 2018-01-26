@@ -2,7 +2,7 @@
   "name": "design-system",
   "version": "0.1.0",
   "scripts": {
-      "start": "gulp"
+    "start": "gulp"
   },
   "dependencies": {
     "autoprefixer": "^7.2.5",
