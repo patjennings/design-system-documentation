@@ -1,2 +1,19 @@
 
 @import "node_modules/bootstrap/scss/bootstrap";
+
+:root {
+    --font-family-serif: "National (not official)";
+}
+
+html, body {
+  // font-size: 0.875rem;
+  font-family: var(--font-family-serif);
+}
+.sidebar{
+    width: 96px;
+    background: $dark;
+    float:left;
+}
+.main{
+    padding-left: 96px;
+}

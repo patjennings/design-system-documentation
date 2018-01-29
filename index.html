@@ -18,13 +18,93 @@
 
 <body>
     <!-- Content here -->
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-4 sidebar">
-                One of three columns
+    <div class="sidebar h-100">
+        <div class="list-group">
+            <button type="button" class="list-group-item list-group-item-action active">0</button>
+            <button type="button" class="list-group-item list-group-item-action">A</button>
+            <button type="button" class="list-group-item list-group-item-action">B</button>
+            <button type="button" class="list-group-item list-group-item-action">C</button>
+            <button type="button" class="list-group-item list-group-item-action" disabled>D</button>
+        </div>
+    </div>
+    <div class="main">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav">
+                                <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                                <a class="nav-item nav-link" href="#">Features</a>
+                                <a class="nav-item nav-link" href="#">Pricing</a>
+                                <a class="nav-item nav-link disabled" href="#">Disabled</a>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-primary">
+                          Notifications <span class="badge badge-light">4</span>
+                        </button>
+                    </nav>
+                </div>
             </div>
-            <div class="col-8">
-                <h1>h1. Bootstrap heading</h1>
+            <div class="row">
+                <div class="col-sm-4">
+                    <h2 class="mt-4 mb-4">Dossier adhérents</h2>
+                    <div class="card mb-4">
+                      <h5 class="card-header">Featured</h5>
+                      <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                    </div>
+                    <div class="card mb-4">
+                      <h5 class="card-header">Featured</h5>
+                      <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                    </div>
+                    <div class="card mb-4">
+                      <h5 class="card-header">Featured</h5>
+                      <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-sm-8 mt-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <h3>Contrat famille</h3>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        Réseau mutualistes
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <h4>Soins courants</h4>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <h4>Spécialistes</h4>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        Détail des garanties
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

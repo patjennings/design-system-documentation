@@ -7,4 +7,8 @@ See bootstrap
     $ cd docs
     $ gem install jekyll bundler
 
+Puis on lance
+
+    $ bundle exec jekyll serve
+
 https://jekyllrb.com/docs/troubleshooting/
