@@ -3,18 +3,17 @@
 
   {% include head.html %}
 
-  <body>
-
-
-
-    <div class="container" aria-label="Content">
+  <body class="docs">
+    <div class="docs-sidebar">
         {% include header.html %}
-        {{ content }}
-        {% include footer.html %}
     </div>
+    <div class="container-fluid" aria-label="Content">
+        <div class="row">
+            <div class="col-6">
+                {{ content }}
+            </div>
+        </div>
 
-
-
+    </div>
   </body>
-
 </html>

@@ -6957,16 +6957,32 @@ a.text-dark:hover, a.text-dark:focus {
   .table-bordered td {
     border: 1px solid #ddd !important; } }
 
-:root {
-  --font-family-serif: "National (not official)"; }
-
 html, body {
-  font-family: var(--font-family-serif); }
+  font-family: var(--font-family-sans-serif); }
 
 .sidebar {
   width: 96px;
   background: #343a40;
-  float: left; }
+  float: left;
+  height: calc(100vh); }
+  .sidebar .nav .nav-item .nav-link {
+    text-align: center;
+    font-size: 0.875rem;
+    color: var(--light); }
+  .sidebar .nav .nav-item svg {
+    width: 100%; }
 
 .main {
   padding-left: 96px; }
+
+.docs .docs-sidebar {
+  width: 320px;
+  float: left;
+  background: var(--gray-dark);
+  height: calc(100vh); }
+
+.docs pre {
+  padding: 24px;
+  background: var(--gray-dark);
+  border-radius: 4px;
+  color: #FFF; }

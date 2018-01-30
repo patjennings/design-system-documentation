@@ -1,0 +1,21 @@
+.docs{
+    .docs-sidebar{
+        width: 320px;
+        float: left;
+        background: var(--gray-dark);
+        height: calc(100vh);
+    }
+    pre{
+        padding: 24px;
+        background: var(--gray-dark);
+        border-radius: 4px;
+        color: #FFF;
+    }
+    .post{
+        .post-content{
+            .highlighter-rouge{
+
+            }
+        }
+    }
+}

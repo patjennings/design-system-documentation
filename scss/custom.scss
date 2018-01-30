@@ -2,18 +2,39 @@
 @import "node_modules/bootstrap/scss/bootstrap";
 
 :root {
-    --font-family-serif: "National (not official)";
+    // --font-family-sans-serif: "National (not official)";
 }
 
 html, body {
   // font-size: 0.875rem;
-  font-family: var(--font-family-serif);
+  font-family: var(--font-family-sans-serif);
 }
 .sidebar{
     width: 96px;
     background: $dark;
     float:left;
+    height: calc(100vh);
+
+    .nav{
+
+        .nav-item{
+
+            .nav-link{
+                text-align: center;
+                font-size: $font-size-base*0.875;
+                color: var(--light);
+            }
+
+            svg{
+                width: 100%;
+            }
+        }
+    }
+
 }
 .main{
     padding-left: 96px;
 }
+
+
+//
