@@ -2,7 +2,7 @@
 @import "node_modules/bootstrap/scss/bootstrap";
 
 :root {
-    --font-family-sans-serif: "lato", Helvetica, Arial, sans-serif;
+    --font-family-sans-serif: "rubik", Helvetica, Arial, sans-serif;
     --blue: #007bff;
     --indigo: #6610f2;
     --purple: #6f42c1;
@@ -33,12 +33,12 @@
 
 html, body {
   // font-size: 0.875rem;
-  // font-family: var(--font-family-sans-serif);
-  font-family: Helvetica, Arial, sans-serif;
-  color: blue;
+  font-family: var(--font-family-sans-serif);
+  // font-family: Helvetica, Arial, sans-serif;
+  // color: blue;
 }
 .sidebar{
-    width: 396px;
+    width: 96px;
     background: $dark;
     float:left;
     height: calc(100vh);

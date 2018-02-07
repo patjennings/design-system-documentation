@@ -19,7 +19,7 @@ var plumber = require('gulp-plumber');
 // Path for gulp compilation
 var paths = {
   scripts: ['./js/**/*.js'],
-  sass: ['./scss/**/*.scss'],
+  sass: ['./scss/**/*.scss']
 };
 var fontStyles = ['mono', 'sans', 'serif']; // With this, fonts task grab fonts files in paths.fonts like this : mono-400.woff, sans-200.woff, sans-400/woff, etc.
 
@@ -34,8 +34,8 @@ gulp.task("sass", function(){
 	log("Generate CSS files " + (new Date()).toString());
     gulp.src(paths.sass)
       .pipe(plumber())
-      .pipe(sass({ style: 'expanded' }))
-      			.pipe(autoprefixer("last 3 version","safari 5", "ie 8", "ie 9"))
+      .pipe(sass({ style: 'expanded', includePaths: ['/scss/'] }))
+        .pipe(autoprefixer("last 3 version","safari 5", "ie 8", "ie 9"))
       .pipe(concat('all.css'))
       .pipe(gulp.dest("./dist/css"))
       .pipe(rename({suffix: '.min'}))
@@ -53,7 +53,7 @@ gulp.task('scripts', ['clean'], function() {
       .pipe(uglify())
       .pipe(concat('all.min.js'))
     .pipe(sourcemaps.write())
-    .pipe(gulp.dest('dist/js'));
+    .pipe(gulp.dest('./dist/js'));
 });
 
 // Rerun the task when a file changes

@@ -6958,7 +6958,7 @@ a.text-dark:hover, a.text-dark:focus {
     border: 1px solid #ddd !important; } }
 
 :root {
-  --font-family-sans-serif: "Lato";
+  --font-family-sans-serif: "rubik", Helvetica, Arial, sans-serif;
   --blue: #007bff;
   --indigo: #6610f2;
   --purple: #6f42c1;
@@ -7011,3 +7011,9 @@ html, body {
 
 .btn-primary {
   background-color: var(--blue); }
+
+@font-face {
+  font-family: "rubik";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Rubik-Regular.ttf"); }
