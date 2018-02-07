@@ -7,6 +7,9 @@
     .site-nav{
         a{
             color: var(--white);
+
+            &:hover{
+              opacity: 0.5;            }
         }
     }
 }

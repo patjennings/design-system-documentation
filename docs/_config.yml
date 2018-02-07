@@ -25,7 +25,7 @@ twitter_username:
 github_username:
 
 sass:
-  sass_dir: assets/_sass
+  sass_dir: assets/sass
   style: compressed
 
 # Build settings

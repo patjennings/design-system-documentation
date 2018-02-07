@@ -18,8 +18,8 @@ var plumber = require('gulp-plumber');
 
 // Path for gulp compilation
 var paths = {
-  scripts: ['js/**/*.js'],
-  sass: ['scss/**/*.scss'],
+  scripts: ['./js/**/*.js'],
+  sass: ['./scss/**/*.scss'],
 };
 var fontStyles = ['mono', 'sans', 'serif']; // With this, fonts task grab fonts files in paths.fonts like this : mono-400.woff, sans-200.woff, sans-400/woff, etc.
 
@@ -37,10 +37,10 @@ gulp.task("sass", function(){
       .pipe(sass({ style: 'expanded' }))
       			.pipe(autoprefixer("last 3 version","safari 5", "ie 8", "ie 9"))
       .pipe(concat('all.css'))
-      .pipe(gulp.dest("dist/css"))
+      .pipe(gulp.dest("./dist/css"))
       .pipe(rename({suffix: '.min'}))
       .pipe(minifycss())
-      .pipe(gulp.dest('dist/css'));
+      .pipe(gulp.dest('./dist/css'));
 });
 
 gulp.task('scripts', ['clean'], function() {
