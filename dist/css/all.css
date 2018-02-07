@@ -6957,6 +6957,12 @@ a.text-dark:hover, a.text-dark:focus {
   .table-bordered td {
     border: 1px solid #ddd !important; } }
 
+@font-face {
+  font-family: "rubik";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Rubik-Regular.ttf"); }
+
 :root {
   --font-family-sans-serif: "rubik", Helvetica, Arial, sans-serif;
   --blue: #007bff;
@@ -6986,8 +6992,8 @@ a.text-dark:hover, a.text-dark:focus {
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px; }
 
-html, body {
-  font-family: var(--font-family-sans-serif); }
+.btn-primary {
+  background-color: var(--blue); }
 
 .sidebar {
   width: 96px;
@@ -7009,11 +7015,5 @@ html, body {
 .main {
   padding-left: 96px; }
 
-.btn-primary {
-  background-color: var(--blue); }
-
-@font-face {
-  font-family: "rubik";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/Rubik-Regular.ttf"); }
+html, body {
+  font-family: var(--font-family-sans-serif); }

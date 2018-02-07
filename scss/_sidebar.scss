@@ -1,0 +1,27 @@
+.sidebar{
+    width: 96px;
+    background: $dark;
+    float:left;
+    height: calc(100vh);
+
+    .nav{
+
+        .nav-item{
+
+            .nav-link{
+                text-align: center;
+                font-size: $font-size-base*0.875;
+                color: var(--light);
+                @include transition(all 0.15s ease-in-out);
+
+                &:hover{
+                    opacity: 0.5;
+                }
+            }
+
+            svg{
+                width: 100%;
+            }
+        }
+    }
+}
