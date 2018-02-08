@@ -12,7 +12,7 @@ La compilation est effectuée à partir de fichiers scss, via Gulp.
 $ npm install
 ```
 
-#### Compilation SCSS + JS (production)
+#### Compilation SCSS + JS (dev)
 ```bash
 $ npm start
 
@@ -29,7 +29,7 @@ $ npm start
 ```
 
 ## Documentation
-La documentation est un site basé sur Jekyll
+La partie documentation est basée sur Jekyll
 
 #### Installation
 ```bash
@@ -71,7 +71,7 @@ Fin du fichier `head.html`
 </head>
 ```
 
-Le style de la documentation est compilé à partir des fichiers .scss situés dans `assets/sass/`. Ceux-ci sont compilés dans `_site/assets/css/main.css`
+Le style de la documentation est compilé à partir des fichiers .scss situés dans `assets/sass/`. Ceux-ci sont compilés dans `_site/assets/css/main.css`. Voir la partie [Structure](https://jekyllrb.com/docs/structure/) dans la doc Jekyll
 
 ## Exemples
 Les exemples sont situés dans `examples/`. On peut les construire en partant de la base suivante.
