@@ -1,3 +1,14 @@
 .main{
-    padding-left: 96px;
+    padding-left: 320px;
+
+    .hero{
+        background: url(../assets/1503334206648.png);
+        background-size: cover;
+        background-position-y: center;
+
+        *{
+            width: 50%;
+            color: #FFF;
+        }
+    }
 }

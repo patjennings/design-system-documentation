@@ -1,0 +1,47 @@
+.car-dashboard--main {
+    .car-dashboard--hero {
+
+    }
+
+    .car-dashboard--content {
+        position: relative;
+        top: -1rem;
+
+
+
+        .car-people--status {
+            border: $list-group-border-width solid $list-group-border-color;
+
+            .car-people--user{
+                width: 8rem;
+            }
+        }
+    }
+}
+
+.car-dashboard--status {
+    border: $list-group-border-width solid $list-group-border-color;
+
+}
+.car-dashboard--status--tabs{
+    .nav-item {
+        .nav-link {
+            color: var(--dark);
+            text-align: center;
+
+            h5 {
+                font-size: 1rem*1.5;
+                font-weight: 300;
+            }
+        }
+    }
+
+    .car-dashboard--list-group {
+        .list-group-item {
+            .oi {
+                font-size: 1rem*1.5;
+                color: var(--gray);
+            }
+        }
+    }
+}

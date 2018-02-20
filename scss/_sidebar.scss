@@ -1,27 +1,57 @@
-.sidebar{
-    width: 96px;
-    background: $dark;
+.car-sidebar{
+    width: 320px;
+    background: #212529;
     float:left;
-    height: calc(100vh);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    color: #FFF;
 
-    .nav{
+    .list-group{
+        .list-group-item{
+            background-color: transparent;
+            border: 0;
+            color: #FFF;
+            @include transition(all 0.25s ease-in-out);
 
-        .nav-item{
-
-            .nav-link{
-                text-align: center;
-                font-size: $font-size-base*0.875;
-                color: var(--light);
-                @include transition(all 0.15s ease-in-out);
-
-                &:hover{
-                    opacity: 0.5;
-                }
+            &.active{
+                background: var(--gray-dark);
             }
-
-            svg{
-                width: 100%;
+            &:hover{
+                background: var(--gray-dark);
             }
         }
+        .list-group-item:first-child{
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+        }
+
     }
+
+    .car-sidebar--bottom{
+        position: absolute;
+        bottom: 0;
+    }
+
+    // .nav{
+    //
+    //     .nav-item{
+    //
+    //         .nav-link{
+    //             text-align: center;
+    //             font-size: $font-size-base*0.875;
+    //             color: var(--light);
+    //             @include transition(all 0.15s ease-in-out);
+    //
+    //             &:hover{
+    //                 opacity: 0.5;
+    //             }
+    //         }
+    //
+    //         svg{
+    //             width: 100%;
+    //         }
+    //     }
+    // }
 }

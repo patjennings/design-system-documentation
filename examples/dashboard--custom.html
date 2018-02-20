@@ -1,0 +1,337 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Title</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="../dist/css/all.min.css" />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="../dist/js/all.min.js"></script>
+
+</head>
+
+<body>
+    <!-- Sidebar -->
+    <div class="car-sidebar h-100">
+        <button type="button" class="btn btn-dark m-3">All projects</button>
+        <h3 class="m-3">UD Playbook</h3>
+        <!-- Menu -->
+        <ul class="list-group">
+            <a href="#" class="list-group-item list-group-item-action"><span class="oi align-middle mr-3" data-glyph="aperture" title="icon" aria-hidden="true"></span>Overview</a>
+            <a href="#" class="list-group-item list-group-item-action active"><span class="oi align-middle mr-3" data-glyph="sun" title="icon" aria-hidden="true"></span>Welcome</a>
+            <a href="#" class="list-group-item list-group-item-action"><span class="oi align-middle mr-3" data-glyph="person" title="icon" aria-hidden="true"></span>Vous et Use Design</a>
+            <a href="#" class="list-group-item list-group-item-action"><span class="oi align-middle mr-3" data-glyph="people" title="icon" aria-hidden="true"></span>La team</a>
+        </ul>
+
+        <!-- Links bottom -->
+        <div class="car-sidebar--bottom p-3 w-100">
+            <button type="button" class="btn btn-success btn-lg mb-3 w-100">New project</button>
+            <div class="dropup show">
+                <a class="btn btn-secondary dropdown-toggle w-100" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                User
+              </a>
+
+                <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="#">Settings</a>
+                    <a class="dropdown-item" href="#">Help</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Content -->
+    <div class="main car-dashboard--main">
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="#">Welcome <span class="sr-only">(current)</span></a>
+                </div>
+            </div>
+            <button type="button" class="btn btn-primary">Primary</button>
+        </nav>
+
+        <!-- Hero -->
+        <div class="container-fluid hero py-5 px-3 car-dashboard--hero">
+            <h1 class="display-3">UD Playbook</h1>
+            <p>
+                Bienvenue !!!<br/> Normalement tu devrais trouver ici réponse à tout un tas de questions. S'il en reste n'hésite à demander à un membre de l'équipe. C'est vivant ici, on ajoutera les réponses au fur et à mesure.
+            </p>
+        </div>
+
+
+        <div class="container w-100 car-dashboard--content">
+
+            <!-- Search module -->
+            <div class="row">
+                <div class="col-md-10 offset-md-1">
+                    <!-- Search -->
+                    <div class="row mb-5">
+                        <div class="col-md-10 p-0">
+                            <input class="form-control form-control-lg" type="text" placeholder="Search for something in this project">
+                        </div>
+                        <div class="col-md-2">
+                            <button type="button" class="btn btn-primary btn-lg w-100">Search</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Status module -->
+            <div class="row">
+
+                <div class="col-md-10 offset-md-1 car-dashboard--status rounded mb-4">
+
+                    <!-- Bloc 1 (status) -->
+                    <div class="row mt-4 mb-4 mx-2">
+                        <div class="col-md-9 pl-0">
+                            <h3>Today <span class="badge badge-pill badge-primary ml-1">101 pages</span></h3>
+                        </div>
+                        <div class="col-md-3">
+                            <a href="#"><span class="oi oi-envelope-closed align-middle mr-2" title="icon envelope-closed" data-glyph="envelope-closed" aria-hidden="true"></span> Email notifications</a>
+                        </div>
+                    </div>
+
+                    <!-- Tabs -->
+                    <div class="row mb-4">
+                        <ul class="nav nav-tabs car-dashboard--status--tabs w-100 px-4">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><h5>0</h5><span class="badge badge-primary w-100">To do</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><h5>0</h5><span class="badge badge-warning w-100">Needs progress</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><h5>0</h5><span class="badge badge-danger w-100">Needs review</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><h5>2</h5><span class="badge badge-success w-100">Approved</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#"><h5>99</h5><span class="badge badge-secondary w-100">No status</span></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Title -->
+                    <div class="row mb-4 mx-2">
+                        <div class="col-12 pl-0 car-dashboard--tabs">
+                            <h5>No status <span class="badge badge-pill badge-info ml-1">99 pages</span></h5>
+                        </div>
+                    </div>
+
+                    <!-- Items -->
+                    <div class="row">
+                        <div class="list-group w-100 car-dashboard--list-group mx-4 mb-4">
+                            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                                <div class="row">
+                                    <div class="col-md-auto mt-2">
+                                        <span class="oi oi-puzzle-piece align-middle" data-glyph="puzzle-piece" title="icon browser" aria-hidden="true"></span>
+                                    </div>
+                                    <div class="col-11">
+                                        <div class="d-flex w-100 justify-content-between">
+                                            <h5 class="mb-1">Organisation des dossiers</h5>
+                                        </div>
+                                        <small>Les bonnes pratiques > Ressources</small>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                                <div class="row">
+                                    <div class="col-md-auto mt-2">
+                                        <span class="oi oi-file align-middle" data-glyph="file" title="icon browser" aria-hidden="true"></span>
+                                    </div>
+                                    <div class="col-11">
+                                        <div class="d-flex w-100 justify-content-between">
+                                            <h5 class="mb-1">Au jour le jour</h5>
+                                        </div>
+                                        <small>Les bonnes pratiques > Ressources</small>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                                <div class="row">
+                                    <div class="col-md-auto mt-2">
+                                        <span class="oi oi-person align-middle" data-glyph="person" title="icon browser" aria-hidden="true"></span>
+                                    </div>
+                                    <div class="col-11">
+                                        <div class="d-flex w-100 justify-content-between">
+                                            <h5 class="mb-1">Adrien</h5>
+                                        </div>
+                                        <small>Les bonnes pratiques > Ressources</small>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                                <div class="row">
+                                    <div class="col-md-auto mt-2">
+                                        <span class="oi oi-file align-middle" data-glyph="file" title="icon browser" aria-hidden="true"></span>
+                                    </div>
+                                    <div class="col-11">
+                                        <div class="d-flex w-100 justify-content-between">
+                                            <h5 class="mb-1">Modifier et ajouter du contenu</h5>
+                                        </div>
+                                        <small>Les bonnes pratiques > Ressources</small>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                                <div class="row">
+                                    <div class="col-md-auto mt-2">
+                                        <span class="oi oi-puzzle-piece align-middle" data-glyph="puzzle-piece" title="icon browser" aria-hidden="true"></span>
+                                    </div>
+                                    <div class="col-11">
+                                        <div class="d-flex w-100 justify-content-between">
+                                            <h5 class="mb-1">Organisation des dossiers</h5>
+                                        </div>
+                                        <small>Les bonnes pratiques > Ressources</small>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-10 offset-md-1 car-people--status rounded mb-4">
+
+                    <!-- Bloc 2 (status) -->
+                    <div class="row mt-4 mb-4 mx-2">
+                        <div class="col-md-12 pl-0">
+                            <h3>People on the project</h3>
+                        </div>
+                    </div>
+
+                    <!-- Tabs -->
+                    <div class="row mb-4 px-4">
+                        <div class="card car-people--user mr-2 mb-2">
+                            <img class="card-img-top" src="../dist/assets/hubble_newold09.jpeg" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">John Doe</p>
+                            </div>
+                        </div>
+                        <div class="card car-people--user mr-2 mb-2">
+                            <img class="card-img-top" src="../dist/assets/hubble_newold09.jpeg" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">John Doe</p>
+                            </div>
+                        </div>
+                        <div class="card car-people--user mr-2 mb-2">
+                            <img class="card-img-top" src="../dist/assets/hubble_newold09.jpeg" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">John Doe</p>
+                            </div>
+                        </div>
+                        <div class="card car-people--user mr-2 mb-2">
+                            <img class="card-img-top" src="../dist/assets/hubble_newold09.jpeg" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">John Doe</p>
+                            </div>
+                        </div>
+                        <a class="card car-people--user mr-2 mb-2">
+                            <img class="card-img-top" src="../dist/assets/hubble_newold09.jpeg" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">John Doe</p>
+                            </div>
+                        </a>
+                        <div class="card car-people--user mr-2 mb-2">
+                            <img class="card-img-top" src="../dist/assets/hubble_newold09.jpeg" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">John Doe</p>
+                            </div>
+                        </div>
+                        <div class="card car-people--user mr-2 mb-2">
+                            <img class="card-img-top" src="../dist/assets/hubble_newold09.jpeg" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">John Doe</p>
+                            </div>
+                        </div>
+                        <div class="card car-people--user mr-2 mb-2">
+                            <img class="card-img-top" src="../dist/assets/hubble_newold09.jpeg" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">John Doe</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-md-10 offset-md-1 car-people--status rounded mb-4">
+
+                    <!-- Bloc 2 (status) -->
+                    <div class="row mt-4 mb-4 mx-2">
+                        <div class="col-md-10 pl-0">
+                            <h3>Recent updates</h3>
+                        </div>
+                        <div class="col-md-2 pl-0 pr-0">
+                            <button type="button" class="btn btn-primary w-100">Post an update</button>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 px-4">
+                            <h6>October 2017</h6>
+                            <div class="list-group mb-4">
+                                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">Sugar Sync</h5>
+                                        <small>10/13/2017</small>
+                                    </div>
+                                    <p class="mb-1">Pas-à-pas de la configuration de SugarSync créé !</p>
+                                    <small>By Thomas Guesnon</small>
+                                </a>
+                            </div>
+                            <h6>November 2017</h6>
+                            <div class="list-group mb-4">
+                                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">Illustrator</h5>
+                                        <small>11/25/2016</small>
+                                    </div>
+                                    <p class="mb-1">Création du pas-à-pas pour le gestion pixel-perfect des fichiers Illustrator (dans “Les Bonnes pratiques”)</p>
+                                    <small>By Thomas Guesnon</small>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">Choix des outils</h5>
+                                        <small>11/24/2016</small>
+                                    </div>
+                                    <p class="mb-1">Je viens de rajouter Caravel à la liste "choix des outils" balancé par Vicent. Évidemment, c'est juste une proposition.</p>
+                                    <small>By Pedro Sant\'Anna</small>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">Commit title</h5>
+                                        <small>01/01/2000</small>
+                                    </div>
+                                    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                                    <small>By Author</small>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

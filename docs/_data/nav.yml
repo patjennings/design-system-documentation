@@ -1,17 +1,13 @@
 toc:
   - title: General
     pages:
-      - title: colors
-        url: /general/colors
-      - title: typography
-        url: /general/typography
+      - title: Colors
+        url: /general/colors.html
+      - title: Typography
+        url: /general/typography.html
   - title: Components
     pages:
-      - title: Href
-        url: /components/href
-      - title: Buttons
-        url: /components/buttons
-      - title: Module
-        url: /components/module
-      - title: Sidebar
-        url: /components/sidebar
+      - title: Tabs
+        url: /components/tabs.html
+      - title: Card
+        url: /components/card.html

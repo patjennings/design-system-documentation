@@ -4,10 +4,10 @@
   <a class="site-title" rel="author" href="{{ "/" | relative_url }}"><h1>{{ site.title | escape }}</h1></a>
 
   {% for item in site.data.nav.toc %}
-      <h3>{{ item.title }}</h3>
-        <ul>
+      <h4>{{ item.title }}</h4>
+        <ul class="site-nav">
           {% for entry in item.pages %}
-            <li><a href="{{ entry.url }}" class="nav-link" >{{ entry.title }}</a></li>
+            <li><a href="{{ "" | relative_url }}{{ entry.url }}" class="nav-link" >{{ entry.title }}</a></li>
           {% endfor %}
         </ul>
     {% endfor %}
